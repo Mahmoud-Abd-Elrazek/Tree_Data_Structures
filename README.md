@@ -2,6 +2,8 @@
 
 This repository contains C++ implementations and algorithms for various tree data structures, including Binary Tree, Binary Search Tree, AVL Tree, M-way Search Tree, B Tree, and B+ Tree. The code is clear and well-documented, providing a comprehensive resource for understanding and working with tree data structures in C++.
 
+** AVL tree & BST inside the binary tree file.
+
 ## Introduction
 
 Tree data structures are essential in computer science for representing hierarchical data. This repository includes implementations of various tree types and their associated algorithms, aimed at students and professionals seeking to enhance their understanding of tree data structures in C++.
