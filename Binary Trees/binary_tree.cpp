@@ -621,7 +621,23 @@ class AVL : public BinaryTree<T> {
         }
     }
 
-
+    /**
+     * Recursively prints the binary tree in a 2D format.
+     * @param r The root node of the binary tree.
+     * @param space The current indentation level for printing.
+     * @param SPACE The increment in indentation level between levels.
+     */
+    void print2D(TreeNode<T>*r, int space = 5, int SPACE = 10) { 
+        if (r == NULL) // Base case  1
+            return;
+        space += SPACE; // Increase distance between levels   2
+        print2D(r->right, space); // Process right child first 3 
+        cout << endl;
+        for (int i = SPACE; i < space; i++) // 5 
+            cout << " "; // 5.1  
+        cout << "["<<r->info  << "]\n"; // 6
+        print2D(r->left, space); // Process left child  7
+    }
 public:
     AVL(){ 
         this->nubmer_of_nodes = 0 ;
@@ -668,18 +684,11 @@ public:
             this->root = remove(this->root, item);
     }
     
-    
-    void print2D(TreeNode<T>*r, int space = 5, int SPACE = 10) { 
-        if (r == NULL) // Base case  1
-            return;
-        space += SPACE; // Increase distance between levels   2
-        print2D(r->right, space); // Process right child first 3 
-        cout << endl;
-        for (int i = SPACE; i < space; i++) // 5 
-            cout << " "; // 5.1  
-        cout << "["<<r->info  << "]\n"; // 6
-        print2D(r->left, space); // Process left child  7
-    }
+    /**
+     * Prints a 2D representation of the binary tree rooted at the current node.
+     * This function recursively traverses the tree and prints the nodes in a 2D format.
+     */
+    void print2D();
     void print2D (){ 
         print2D(this->root);
     }
