@@ -21,5 +21,5 @@ Tree data structures are essential in computer science for representing hierarch
 Clone the repository to your local machine using the following command:
 
 ```sh
-git clone https://github.com/Mahmoud-Abd-Elrazek/tree-data-structures.git
-cd tree-data-structures
+git clone https://github.com/Mahmoud-Abd-Elrazek/trees-data-structure.git
+cd trees-data-structure
